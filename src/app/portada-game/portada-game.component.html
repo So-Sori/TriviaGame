@@ -1,0 +1,19 @@
+<div class="welcom-card" *ngIf="displayPortada">
+  <div class="title-card">🎉 ¡Trivia Sorpresa! 💥💦 🎉</div>
+  
+  <div class="text-card">
+    {{textPortada}}
+  </div>
+
+  <div *ngIf="displayQuestions">
+    {{textPortada}}
+  </div>
+
+  <div *ngIf="!nextFinish" class="result-card result-card-animate">
+    Resultado: {{result}}/6
+  </div>
+
+  <button class="button-card" (click)="changeDisplayPortada()">{{textBtnPortada}}</button>
+</div>
+
+<app-questions *ngIf="displayQuestions" [valorRecibido]="displayQuestions" [metodoCompartido]="showResult.bind(this)"  (objResult)="receiveData($event)"></app-questions>

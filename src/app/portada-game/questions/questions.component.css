@@ -1,0 +1,86 @@
+/* Contenedor principal */
+.container-padre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f3e8ff, #e9d5ff);
+}
+
+/* Número de la pregunta */
+.number-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7e22ce;
+  background: #e9d5ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(168, 85, 247, 0.3);
+  margin-bottom: 15px;
+}
+
+/* Contenedor de preguntas */
+.container-questions {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Título de la pregunta */
+.head-questions {
+  font-size: 1.5rem;
+  color: #7e22ce;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de opciones */
+.anwsers-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Botones de respuesta */
+.btn-answers {
+  background: #e9d5ff;
+  color: #7e22ce;
+  padding: 12px 20px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  transition: background 0.3s, border 0.3s;
+}
+
+.btn-answers:hover {
+  background: #d8b4fe;
+  border: 2px solid #a855f7;
+}
+
+/* Botón de siguiente */
+.nextq-btn {
+  background: #c084fc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.nextq-btn:hover {
+  background: #a855f7;
+  box-shadow: 0 4px 8px rgba(168, 85, 247, 0.5);
+}
