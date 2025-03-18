@@ -1,0 +1,21 @@
+<ng-container *ngIf="valorRecibido">
+  <div class="container-padre">
+    <div class="number-question">{{ counterQuestions + 1 }}/6</div>
+    <div class="container-questions">
+      <h2 class="head-questions">{{ questionToShow.question }}</h2>
+      <div class="anwsers-btns" *ngFor="let answer of arrayOfAnwsers">
+        <button
+          class="btn-answers"
+          value="{{ answer[0] }}"
+          (click)="getValue($event)"
+          (click)="questionToShowNext()"
+        >
+          {{ answer[1] }}
+        </button>
+      </div>
+      <button class="nextq-btn" (click)="questionToShowNext()" *ngIf="next">
+        Siguiente
+      </button>
+    </div>
+  </div>
+</ng-container>
